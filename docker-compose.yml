@@ -1,0 +1,12 @@
+version: '3'
+services:
+  laravel.test:
+    image: 'laravelsail/php80-composer'
+    user: 'laravel'
+    environment:
+      WWWUSER: 'laravel'
+      LARAVEL_SAIL: 1
+    volumes:
+      - '.:/var/www/html'
+    ports:
+      - '80:80'
